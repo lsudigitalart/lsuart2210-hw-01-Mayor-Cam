@@ -32,18 +32,11 @@ function setup()
   for (var i = lineSpace/2;  i < canvasWidth; i+= lineSpace )
   {
       fill(0,0,0);
-      ellipse(i,0, radius2);               //top row of black circles
+      ellipse(i,0, radius2);              //top row of black circles
       ellipse(i, canvasHeight, radius2);  //bottom row of black circles
       ellipse(0,i, radius2);              //left row of black circles
       ellipse(canvasWidth, i, radius2);   //right row of black circles
   }
-/*
-    fill(0,0,0);
-    ellipse(canvasWidth/2,0,radius2);
-    ellipse(canvasWidth/2, canvasHeight, radius2);
-    ellipse(0, canvasHeight/2, radius2);
-    ellipse(canvasWidth, canvasHeight/2, radius2);
-*/
 
   //parent for-loop copies lines along the x axis to create a pattern
   for (var j = 0; j < canvasWidth * 2; j += lineSpace)
